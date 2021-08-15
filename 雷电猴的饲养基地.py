@@ -23,9 +23,9 @@ elif (choise == '2'):
     if (choise2 == '1'):
        print("正在为您开启新游戏")
        print("开启成功！")
-    if (choise2 == '2'):
+    elif (choise2 == '2'):
       choise3 = input("那您到底要不要读档呀？(1.是)")
-    if (choise3 == '1'):
+      if (choise3 == '1'):
        with open('Bbh.data','r') as file:
          if file.read(7) == BBH:
             with open("ZT.data",'r') as file:
